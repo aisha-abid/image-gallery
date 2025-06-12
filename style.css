@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    min-height: 100vh;
+  font-family: "Hammersmith One", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-weight: 700;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+header .logo{
+    display: inline-block;
+    position: relative;
+    color: #3f7793;
+    font-size: 35px;
+    opacity: 0;
+    animation: fadeInLogo 1s ease forwards;
+}
+.logo::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #3f7793;
+    transition: width 0.3s ease;
+}
+.logo:hover::after{
+    width: 100%;
+}
+@keyframes fadeInLogo{
+    to{
+        opacity: 1;
+    }
+}
+header .filter-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filter-buttons button{
+margin:  6px;
+padding: 9px 18px;
+font-size: 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+color: #3f7793;
+background-color: #f0f8fa;
+transition: 0.3s ease;
+}
+.filter-buttons button:hover {
+  transform: scale(1.05);
+}
+.filter-buttons button:hover,
+.filter-buttons button:active{
+    background-color: #3f7793;
+    color: #ffff;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .images{
+    gap: 15px;
+    max-width: 95%;
+    margin-top: 30px;
+    columns: 5 340px;
+}
+.images .card{
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.images .card .details{
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    padding: 15px 20px;
+    transition: bottom 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(0,0,0,0.7),transparent);
+}
+.images .card:hover .details{
+bottom: 0px;
+}
+.card .details .photographer{
+color: #fff;
+display: flex;
+align-items: center;
+font-weight: 500;
+}
+
+.details .photographer i{
+    font-size: 20px;
+    margin-right: 7px;
+}
+.details .photographer span{
+    font-size: 18px;
+}
+.card .details button{
+    padding:  3px 8px;
+    font-size: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+.images img{
+   width: 100%;
+
+}
+.gallery .load-more{
+    margin: 50px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 12px 27px;
+    background-color: #3f7793;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
