@@ -1,5 +1,9 @@
 const  filterButtons=document.querySelectorAll(".filter-buttons button");
 const filterableCards=document.querySelectorAll(".images .card");
+const cards=document.querySelectorAll(".images .card");
+const closeIcon=document.querySelector(".close-icon");
+const lightBox=document.querySelector(".lightbox");
+
 
 
 //Define the filterCard function
@@ -20,3 +24,16 @@ filterableCards.forEach(card=>{
 
 //add click event listener to each filter button
 filterButtons.forEach(button=>button.addEventListener('click',filterCards));
+
+const previewCard=e=>{
+    console.log(e.target);
+}
+cards.forEach(card=>card.addEventListener('click',()=>{
+    lightBox.style.display='block';
+    const imgSrc = card.querySelector('img').src;
+    lightBox.querySelector('.preview-img img').src = imgSrc;
+
+}));
+closeIcon.addEventListener('click',()=>{
+    lightBox.style.display='none';
+})
