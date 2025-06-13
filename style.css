@@ -10,7 +10,7 @@ body{
   /* font-family: "Raleway", sans-serif; */
   font-weight: 700;
 }
-header{
+nav{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@ header{
     padding: 20px;
     gap: 10px;
 }
-header .logo{
+nav .logo{
     display: inline-block;
     position: relative;
     color: #3f7793;
@@ -44,7 +44,7 @@ header .logo{
         opacity: 1;
     }
 }
-header .filter-buttons{
+nav .filter-buttons{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -108,12 +108,14 @@ display: flex;
 align-items: center;
 font-weight: 500;
 }
-
-.details .photographer i{
+.card.hide{
+    display: none;
+}
+.photographer i{
     font-size: 20px;
     margin-right: 7px;
 }
-.details .photographer span{
+.photographer span{
     font-size: 18px;
 }
 .card .details button{
@@ -140,4 +142,69 @@ font-weight: 500;
     outline: none;
     border-radius: 6px;
 }
+.lightbox{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65); 
+    display: none;
+}
+.lightbox .wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 850px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    
+}
 
+.wrapper header{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+header .photographer{
+    color: #3f7793;
+}
+.photographer i{
+    font-size: 20px;
+}
+
+ .photographer span{
+    font-size: 18px;
+}
+header .buttons i{
+   width: 40px;
+   height: 40px; 
+   color: #fff;
+   text-align: center;
+   line-height: 40px;
+   background-color: #3f7793;
+   font-size: 14px;
+   display: inline-block;
+   cursor: pointer;
+}
+.buttons i:last-child{
+    margin-left: 10px;
+    background:#6c757d;
+
+}
+ .preview-img{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+ }
+.wrapper .preview-img .img{
+    max-height: 60vh;
+    max-width: 90vh;
+}
+.preview-img .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

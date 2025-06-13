@@ -15,23 +15,43 @@
 
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    
-    <header>
+    <div class="lightbox">
+     <div class="wrapper">
+       <header>
+        <div class="photographer">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <span>Jannat Mirza</span>
+                    </div>
+                    <div class="buttons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+       </header> 
+       <div class="preview-img">
+        <div class="img">
+            <img src="images/cat-02.jpg" alt="preview-img">
+        </div>
+       </div>
+     </div> <!--wrapper end-->
+    </div> <!--lightbox end-->
+    <nav>
         <div class="logo">Gallery Zone</div>
         <div class="filter-buttons">
             <button class="active" data-name="all">Show All</button>
             <button data-name="cars">Cars</button>
-            <button data-name="ice-cream">Ice Cream</button>
+            <button data-name="ice-creams">Ice Creams</button>
             <button data-name="cats">Cats</button>
+            <button data-name="mobiles">Mobiles</button>
+
         </div> <!--filter buttons end-->
-    </header>
+    </nav>
     <section class="gallery">
         <ul class="images">
-            <li class="card"><img src="images/car-0.jpg" alt="img">
+            <li data-name="cars" class="card"><img src="images/car-0.jpg" alt="img">
                 <div class="details">
                     <div class="photographer">
                     <i class="fa-solid fa-camera-retro"></i>
@@ -41,42 +61,61 @@
                     
                 </div>
             </li>
-            <li class="card"><img src="images/cat-0.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-0.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-01.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-01.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-01.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-02.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-02.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-02.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-03.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-03.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-03.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-04.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-04.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-04.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-05.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-05.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-05.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-06.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-06.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-06.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-07.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-07.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-07.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-08.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-08.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-08.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-09.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-09.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-09.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-10.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-10.jpg" alt="img"></li>
-            <li class="card"><img src="images/mobile-10.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-11.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-11.jpg" alt="img"></li>
-            <li class="card"><img src="images/car-12.jpg" alt="img"></li>
-            <li class="card"><img src="images/cat-12.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream0.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-0.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream17.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-0.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-01.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream1.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-01.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-01.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream16.jpg" alt="img"></li>
+             
+            <li data-name="cats" class="card"><img src="images/cat-02.jpg" alt="img"></li>
+             <li data-name="ice-creams" class="card"><img src="images/ice-cream02.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-02.jpg" alt="img"></li>
+
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream04.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-03.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream18.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-03.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-04.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream05.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-04.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-04.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-05.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream06.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-05.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream19.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-05.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-06.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream07.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-06.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-06.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-07.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream08.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-07.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream20.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-07.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-08.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream09.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-08.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-08.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-09.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream10.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-09.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-09.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-10.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream11.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-10.jpg" alt="img"></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-10.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-11.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream12.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-11.jpg" alt="img"></li>
+            <li data-name="cars" class="card"><img src="images/car-12.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream13.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-12.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream14.jpg" alt="img"></li>
 
 
 
