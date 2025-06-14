@@ -6,7 +6,7 @@ const lightBox=document.querySelector(".lightbox");
 const previewImg = lightBox.querySelector('.preview-img img');
 const prevBtn=lightBox.querySelector(".prev-btn");
 const nextBtn=lightBox.querySelector(".next-btn");
-
+const body=document.querySelector(".body");
 
 
 let currentIndex=0;
@@ -51,3 +51,7 @@ prevBtn.addEventListener('click',()=>{
 closeIcon.addEventListener('click',()=>{
     lightBox.style.display='none';
 })
+// body.addEventListener('click',()=>{
+//     lightBox.style.display='none';
+// })
+
