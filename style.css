@@ -26,6 +26,10 @@ nav .logo{
     font-size: 35px;
     opacity: 0;
     animation: fadeInLogo 1s ease forwards;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.logo:hover{
+transform: scale(1.05);
 }
 .logo::after{
     content: ' ';
@@ -93,6 +97,13 @@ button.active{
     margin-bottom: 14px;
     border-radius: 4px;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .images .card .details{
     position: absolute;
