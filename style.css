@@ -17,6 +17,7 @@ nav{
     justify-content: space-between;
     padding: 20px;
     gap: 10px;
+    position: sticky;
 }
 nav .logo{
     display: inline-block;
@@ -64,10 +65,15 @@ transition: 0.3s ease;
 .filter-buttons button:hover {
   transform: scale(1.05);
 }
-.filter-buttons button:hover,
-.filter-buttons button:active{
+.filter-buttons button:hover
+/* .filter-buttons button:active{ */
+{
     background-color: #3f7793;
     color: #ffff;
+}
+button.active{
+    background-color: #3f7793;
+    color: #fff;
 }
 .gallery{
     display: flex;
@@ -102,6 +108,8 @@ transition: 0.3s ease;
 .images .card:hover .details{
 bottom: 0px;
 }
+
+
 .card .details .photographer{
 color: #fff;
 display: flex;
@@ -208,3 +216,31 @@ header .buttons i{
     height: 100%;
     object-fit: contain;
 }
+.prev-btn, .next-btn{
+    border: 2px solid #3f7793;
+    padding: 5px 10px;
+    background-color: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 25px; 
+}
+.next-btn{
+    right: 0;
+}
+.prev-btn{
+    left: 0;
+}
+button i{
+    color:#195c7e;
+}
+button:hover,button:hover i{
+    background-color:  #3f7793;
+    color: #fff;
+}
+
