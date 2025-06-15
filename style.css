@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+     scroll-behavior: smooth;
+
+}
 body{
     background-color: #fff;
     min-height: 100vh;
@@ -17,7 +21,8 @@ nav{
     justify-content: space-between;
     padding: 20px;
     gap: 10px;
-    position: sticky;
+    top: 0;
+    width: 100%;
 }
 nav .logo{
     display: inline-block;
@@ -69,8 +74,8 @@ transition: 0.3s ease;
 .filter-buttons button:hover {
   transform: scale(1.05);
 }
-.filter-buttons button:hover
-/* .filter-buttons button:active{ */
+.filter-buttons button:hover,
+.filter-buttons button:active
 {
     background-color: #3f7793;
     color: #ffff;
@@ -140,11 +145,14 @@ font-weight: 500;
 .card .details button{
     padding:  3px 8px;
     font-size: 15px;
-    background-color: #fff;
+    background-color: #3f7793;
     cursor: pointer;
     border: none;
     border-radius: 3px;
     outline: none;
+}
+.card .details button .heart-icon{
+    color: #fff;
 }
 .images img{
    width: 100%;
@@ -194,20 +202,24 @@ header .photographer{
     font-size: 20px;
 }
 
- .photographer span{
-    font-size: 18px;
-}
 header .buttons i{
    width: 40px;
    height: 40px; 
    color: #fff;
    text-align: center;
    line-height: 40px;
-   background-color: #3f7793;
+   background-color: #8bc4e0;
    font-size: 14px;
    display: inline-block;
    cursor: pointer;
 }
+.heart-icon.filled{
+   color: rgb(248, 33, 105); 
+}
+.details.heart-icon.heart-icon.filled{
+    color: rgb(248, 33, 105);
+}
+
 .buttons i:last-child{
     margin-left: 10px;
     background:#6c757d;
@@ -254,4 +266,111 @@ button:hover,button:hover i{
     background-color:  #3f7793;
     color: #fff;
 }
+.hamburger-menu-container{
+    position: relative;
+    display: none;
+    
+}
+.hamburger-menu{
+    position: absolute;
+    right: 0;
+    top: -20px;
+    /* display: none; */
+}
+.hamburger-icon{
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    color: #195c7e;
+    font-weight: 800;
+}
+  .filter-buttons .close-icon{
+    display: none;
+  }
+
+/* Mobile design */
+@media only screen and (max-width: 710px) {
+ body{
+    /* overflow: hidden; */
+ }
+
+ nav{
+     background-color: transparent;
+    position: sticky;
+    backdrop-filter: blur(8px);
+    flex-direction: row;
+    top: 0;
+    z-index: 99999;
+ }
+ nav .logo{
+        font-size: 24px;
+    }
+.hamburger-menu-container{
+    display: block;
+}
+.filter-buttons{
+display: flex;
+flex-direction: column;
+position: absolute;
+gap: 30px;
+top: 16px;
+background: rgba(119, 148, 148, 0.9);
+transition: all 0.25s ease-in-out;
+display: none;
+padding: 30px;
+right: -200px;
+transition: right 0.25s ease-in-out;
+justify-content: space-between;
+border-radius: 10px;
+  }
+  .filter-buttons .close-icon{
+   position: absolute;
+   right: -75px;
+   top: 12px;
+   width: 100px;
+   display: block;
+   color: #fff;
+  }
+  .filter-buttons .close-icon:hover{
+        color: #3f7793;
+    }
+  .filter-buttons button {
+    width: 100%;
+  }
+.menu-open .filter-buttons{ 
+right: 24px;
+}
+.menu-open .hamburger-menu-container{
+    display: none;
+}
+
+}
+
+
+@media only screen and (max-width: 490px) {
+.filter-buttons{
+    padding: 25px;
+}    
+.filter-buttons button{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.filter-buttons .close-icon{
+   right: -80px;
+   top: 10px;
+  }
+  nav .logo{
+font-size: 16px;
+  }
+  .hamburger-menu{
+    top: -15px;
+}
+  .hamburger-icon{
+    font-size: 16px;
+}
+
+}
+
+
+
 

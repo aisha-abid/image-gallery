@@ -24,10 +24,9 @@
        <header>
         <div class="photographer">
                     <i class="fa-solid fa-camera-retro"></i>
-                    <span>Jannat Mirza</span>
                     </div>
                     <div class="buttons">
-                    <i class="fa-solid fa-heart"></i>
+                    <i class="heart-icon fa-solid fa-solid fa-heart"></i>
                     <i class=" close-icon fa-solid fa-xmark"></i>
                     </div>
        </header> 
@@ -42,12 +41,20 @@
     </div> <!--lightbox end-->
     <nav>
         <div class="logo">Gallery Zone</div>
+        <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <span class="hamburger-icon">&#9776</span>
+                    </div>
+                </div>
         <div class="filter-buttons">
+            <i class=" close-icon fa-solid fa-xmark"></i>
             <button class="active" data-name="all">Show All</button>
             <button data-name="cars">Cars</button>
             <button data-name="ice-creams">Ice Creams</button>
             <button data-name="cats">Cats</button>
             <button data-name="mobiles">Mobiles</button>
+            <button data-name="favorite" class="favorite">favorite</button>
+            
 
         </div> <!--filter buttons end-->
     </nav>
@@ -55,64 +62,219 @@
         <ul class="images">
             <li data-name="cars" class="card"><img src="images/car-0.jpg" alt="img">
                 <div class="details">
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
                 </div>
             </li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream0.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-0.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream17.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-0.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-01.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream1.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-01.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-01.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream16.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream0.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-0.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream17.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-0.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-01.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream1.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-01.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-01.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream16.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
              
-            <li data-name="cats" class="card"><img src="images/cat-02.jpg" alt="img"></li>
-             <li data-name="ice-creams" class="card"><img src="images/ice-cream02.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-02.jpg" alt="img"></li>
+            <li data-name="cats" class="card"><img src="images/cat-02.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+             <li data-name="ice-creams" class="card"><img src="images/ice-cream02.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-02.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
 
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream04.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-03.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream18.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-03.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-04.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream05.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-04.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-04.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-05.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream06.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-05.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream19.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-05.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-06.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream07.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-06.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-06.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-07.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream08.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-07.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream20.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-07.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-08.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream09.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-08.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-08.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-09.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream10.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-09.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-09.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-10.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream11.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-10.jpg" alt="img"></li>
-            <li data-name="mobiles" class="card"><img src="images/mobile-10.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-11.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream12.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-11.jpg" alt="img"></li>
-            <li data-name="cars" class="card"><img src="images/car-12.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream13.jpg" alt="img"></li>
-            <li data-name="cats" class="card"><img src="images/cat-12.jpg" alt="img"></li>
-              <li data-name="ice-creams" class="card"><img src="images/ice-cream14.jpg" alt="img"></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream04.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-03.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream18.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-03.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-04.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream05.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-04.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-04.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-05.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream06.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-05.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream19.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-05.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-06.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream07.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-06.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-06.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-07.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream08.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-07.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream20.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-07.jpg" alt="img"><div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div>
+            </li>
+            <li data-name="cars" class="card"><img src="images/car-08.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream09.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-08.jpg" alt="img"><div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-08.jpg" alt="img"><div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-09.jpg" alt="img"><div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream10.jpg" alt="img"><div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-09.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-09.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-10.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream11.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-10.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="mobiles" class="card"><img src="images/mobile-10.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-11.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream12.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-11.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cars" class="card"><img src="images/car-12.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream13.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+            <li data-name="cats" class="card"><img src="images/cat-12.jpg" alt="img">
+            <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
+              <li data-name="ice-creams" class="card"><img src="images/ice-cream14.jpg" alt="img">
+              <div class="details">
+                    <button><i class=" heart-icon fa-solid fa-heart"></i></button>
+                </div></li>
 
 
 
