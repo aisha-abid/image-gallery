@@ -11,8 +11,8 @@ body{
     background-color: #fff;
     min-height: 100vh;
   font-family: "Hammersmith One", sans-serif;
-  /* font-family: "Raleway", sans-serif; */
   font-weight: 700;
+  overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -88,12 +88,14 @@ button.active{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .gallery .images{
     gap: 15px;
     max-width: 95%;
     margin-top: 30px;
     columns: 5 340px;
+   
 }
 .images .card{
     display: flex;
@@ -145,29 +147,20 @@ font-weight: 500;
 .card .details button{
     padding:  3px 8px;
     font-size: 15px;
-    background-color: #3f7793;
+    background-color: #8bc4e0;
     cursor: pointer;
     border: none;
     border-radius: 3px;
     outline: none;
+     transition: transform 0.2s ease, color 0.3s ease;
 }
 .card .details button .heart-icon{
     color: #fff;
+     transition: transform 0.2s ease, color 0.3s ease;
 }
 .images img{
    width: 100%;
 
-}
-.gallery .load-more{
-    margin: 50px 0;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 12px 27px;
-    background-color: #3f7793;
-    border: none;
-    outline: none;
-    border-radius: 6px;
 }
 .lightbox{
     position: fixed;
@@ -176,13 +169,14 @@ font-weight: 500;
     height: 100%;
     background: rgba(0,0,0,0.65); 
     display: none;
+    padding: 20px;
 }
 .lightbox .wrapper{
     position: absolute;
     left: 50%;
     top: 50%;
     width: 100%;
-    max-width: 850px;
+    max-width: 750px;
     background-color: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%);
@@ -212,12 +206,24 @@ header .buttons i{
    font-size: 14px;
    display: inline-block;
    cursor: pointer;
+  
 }
 .heart-icon.filled{
    color: rgb(248, 33, 105); 
+   transform: scale(1.2);
 }
-.details.heart-icon.heart-icon.filled{
-    color: rgb(248, 33, 105);
+.close-icon{
+     transition: transform 0.2s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.close-icon:hover{
+     transform: scale(1.2);
+     color: brown;
+}
+
+.card .details .heart-icon.filled{
+   color: red;
+    transform: scale(1.2);
 }
 
 .buttons i:last-child{
@@ -225,6 +231,7 @@ header .buttons i{
     background:#6c757d;
 
 }
+
  .preview-img{
     display: flex;
     margin-top: 25px;
@@ -232,7 +239,7 @@ header .buttons i{
  }
 .wrapper .preview-img .img{
     max-height: 60vh;
-    max-width: 90vh;
+    max-width: 80vh;
 }
 .preview-img .img img{
     width: 100%;
@@ -289,11 +296,18 @@ button:hover,button:hover i{
   }
 
 /* Mobile design */
-@media only screen and (max-width: 710px) {
- body{
-    /* overflow: hidden; */
- }
-
+@media only screen and (max-width: 810px){
+.lightbox .wrapper{
+    max-width:580px ;
+}
+.filter-buttons button {
+    margin: 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+}
+@media only screen and (max-width: 610px) {
+ 
  nav{
      background-color: transparent;
     position: sticky;
@@ -309,19 +323,19 @@ button:hover,button:hover i{
     display: block;
 }
 .filter-buttons{
-display: flex;
-flex-direction: column;
-position: absolute;
-gap: 30px;
-top: 16px;
-background: rgba(119, 148, 148, 0.9);
-transition: all 0.25s ease-in-out;
-display: none;
-padding: 30px;
-right: -200px;
-transition: right 0.25s ease-in-out;
-justify-content: space-between;
-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 30px;
+  top: 16px;
+  background: rgba(119, 148, 148, 0.9);
+  transition: all 0.25s ease-in-out;
+  display: none;
+  padding: 30px;
+  right: -200px;
+  transition: right 0.25s ease-in-out;
+  justify-content: space-between;
+  border-radius: 10px;
   }
   .filter-buttons .close-icon{
    position: absolute;
@@ -342,6 +356,9 @@ right: 24px;
 }
 .menu-open .hamburger-menu-container{
     display: none;
+}
+.lightbox .wrapper{
+    max-width:460px ;
 }
 
 }
@@ -368,9 +385,29 @@ font-size: 16px;
   .hamburger-icon{
     font-size: 16px;
 }
-
+.lightbox .wrapper{
+    max-width:280px ;
 }
 
+}
+@media only screen and (max-width: 310px){
+  .lightbox .wrapper{
+    max-width:200px ;
+}
+.prev-btn, .next-btn {
+    padding: 2px 5px;
+    margin: 4px;
+}
+.photographer i {
+font-size: 15px;
+}
+header .buttons i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+}
+}
 
 
 
